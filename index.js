@@ -10,7 +10,7 @@ const PORT = 3000;
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 //Endpoint
-app.get('/', (req, res) => {
+app.get('/api/quote', (req, res) => {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     res.json(quotes[randomIndex]);
 });
@@ -27,5 +27,5 @@ app.get('/api/quote/:id', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Servidor corriendo en http://localhost:${PORT}`);
+    console.log(`Servidor corriendo en http://localhost:${PORT}/api-docs`);
 });
