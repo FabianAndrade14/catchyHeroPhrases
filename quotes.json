@@ -1,0 +1,7 @@
+[
+  { "id": 1, "character": "Spider-Man", "quote": "With great power comes great responsibility." },
+  { "id": 2, "character": "Batman", "quote": "I am vengeance, I am the night, I am Batman!" },
+  { "id": 3, "character": "Superman", "quote": "Dreams save us. Dreams lift us up and transform us." },
+  { "id": 4, "character": "Iron Man", "quote": "I am Iron Man." },
+  { "id": 5, "character": "Wonder Woman", "quote": "Only love can truly save the world." }
+]
