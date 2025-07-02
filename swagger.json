@@ -1,0 +1,60 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Superhero Quotes API",
+    "description": "API para obtener frases de superhéroes",
+    "version": "1.0.0"
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "schemes": ["http"],
+  "paths": {
+    "/api/quote": {
+      "get": {
+        "summary": "Obtener una frase aleatoria",
+        "responses": {
+          "200": {
+            "description": "Frase aleatoria",
+            "schema": {
+              "$ref": "#/definitions/Quote"
+            }
+          }
+        }
+      }
+    },
+    "/api/quote/{id}": {
+      "get": {
+        "summary": "Obtener una frase por ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Frase encontrada",
+            "schema": {
+              "$ref": "#/definitions/Quote"
+            }
+          },
+          "404": {
+            "description": "Frase no encontrada"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Quote": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "integer" },
+        "character": { "type": "string" },
+        "quote": { "type": "string" }
+      }
+    }
+  }
+}
