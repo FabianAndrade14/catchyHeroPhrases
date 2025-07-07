@@ -5,9 +5,9 @@
     "description": "API para obtener frases de superhéroes",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "catchyherophrases.onrender.com",
   "basePath": "/",
-  "schemes": ["http"],
+  "schemes": ["http","https"],
   "paths": {
     "/api/quote": {
       "get": {
