@@ -1,11 +1,12 @@
 const express = require('express');
+const cors = require('cors');
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
 const quotes = require('./quotes.json');
 
 const app = express();
+app.use(cors());
 const PORT = 3000;
-
 // Swagger doc
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
