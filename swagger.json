@@ -7,7 +7,7 @@
   },
   "host": "catchyherophrases.onrender.com",
   "basePath": "/",
-  "schemes": ["http","https"],
+  "schemes": ["https"],
   "paths": {
     "/api/quote": {
       "get": {
